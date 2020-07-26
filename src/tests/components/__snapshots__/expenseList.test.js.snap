@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render a message when the expenses list is Empety  1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <p>
+    There is no expenses in the list
+  </p>
+</div>
+`;
+
+exports[`Should render expense list with expenses items 1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <ExpenesItem
+    amount={150}
+    createdAt={-345600000}
+    description="rent"
+    id="1"
+    key="1"
+    notes=""
+  />
+  <ExpenesItem
+    amount={50}
+    createdAt={345600000}
+    description="wifi bill"
+    id="2"
+    key="2"
+    notes=""
+  />
+  <ExpenesItem
+    amount={250}
+    createdAt={864000000}
+    description="water bill"
+    id="3"
+    key="3"
+    notes=""
+  />
+</div>
+`;
