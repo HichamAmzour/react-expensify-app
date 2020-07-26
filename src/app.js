@@ -11,9 +11,9 @@ import 'react-dates/lib/css/_datepicker.css';
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 
-store.dispatch(addExpenseAction({description:"this is water bill",notes:"water bill",amount:"26",createdAt:120}));
-store.dispatch(addExpenseAction({description:"this is Gaz bill",notes:"Gaz bill",amount:"29",createdAt:340}));
-store.dispatch(addExpenseAction({description:"this is electricity bill",notes:"Gaz bill",amount:"69",createdAt:130}));
+// store.dispatch(addExpenseAction({description:"this is water bill",notes:"water bill",amount:"26",createdAt:120}));
+// store.dispatch(addExpenseAction({description:"this is Gaz bill",notes:"Gaz bill",amount:"29",createdAt:340}));
+// store.dispatch(addExpenseAction({description:"this is electricity bill",notes:"Gaz bill",amount:"69",createdAt:130}));
 // store.dispatch(setTextFiltersAction("water"));
 
 // setTimeout(()=>{
