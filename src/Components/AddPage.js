@@ -23,7 +23,7 @@ export class AddExpensePage extends React.Component{
 
 const matchDispatchToProps = (dispatch)=>(
     {
-        addExpense : ()=>{
+        addExpense : (expense)=>{
             dispatch(addExpenseAction(expense))
         }
     } 

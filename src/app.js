@@ -7,7 +7,6 @@ import {addExpenseAction} from './ReduxFolder/actions/expenseActions';
 import {setTextFiltersAction} from './ReduxFolder/actions/filterActions';
 import getVisibleExpenses from './ReduxFolder/selectors/expensesSelector';
 import 'react-dates/lib/css/_datepicker.css';
-
 import 'normalize.css/normalize.css';
 import './styles/style.scss';
 
