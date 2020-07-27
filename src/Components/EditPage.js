@@ -10,13 +10,8 @@ export class EditExpensePage extends React.Component {
         this.props.history.push('/');
     }
 
-    removeExpense =  (id) => { 
-        this.props.removeExpense(id);
-        this.props.history.push('/');
-    }
-
     render(){
-
+        
         return (
             <div>
                <p>Editing the element that has Id: {this.props.match.params.id}</p>
@@ -24,7 +19,10 @@ export class EditExpensePage extends React.Component {
                  expense={this.props.expense} 
                  onSubmit={this.editExpense}
                 />
-            <button onClick={this.removeExpense(this.props.expense.id)} 
+            <button onClick={()=>{
+                this.props.removeExpense(this.props.match.params.id);
+                this.props.history.push('/');
+            }} 
             >Remove</button>
             </div>
         )
@@ -43,7 +41,7 @@ const mapDispatchToProps = (dispatch, props)=>{
 }
 
 const mapStateToProps= (state, props) => {
-  
+    
     return {
         expense: state.expenses.find((expense) => expense.id === props.match.params.id)
     };
